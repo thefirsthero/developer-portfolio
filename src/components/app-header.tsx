@@ -1,9 +1,6 @@
 import { mainMenu } from "@/config/menu";
-import { cn } from "@/lib/utils";
 import { AppLogo } from "./app-logo";
 import { Button } from "./ui/button";
-import { appConfig } from "@/config/app";
-import GitHub from "./icons/github";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 
@@ -19,7 +16,7 @@ export function AppHeader() {
     <header className="bg-background sticky top-0 z-50 border-b">
       <div className="w-full ~max-w-7xl mx-auto flex items-center gap-2 h-14 px-4 md:px-8 justify-between">
         <AppLogo />
-        <nav className="hidden md:flex gap-1 flex-1 justify-center">
+        <nav className="hidden md:flex gap-1 justify-center">
           {mainMenu.map((item) => (
             <Button
               key={item.to}
@@ -27,7 +24,8 @@ export function AppHeader() {
               onClick={() => scrollTo(item.to)}
               className="text-foreground/70 hover:text-foreground"
             >
-              {item.icon && <item.icon className="mr-2 h-4 w-4" />}{item.title}
+              {item.icon && <item.icon className="mr-2 h-4 w-4" />}
+              {item.title}
             </Button>
           ))}
         </nav>
@@ -47,7 +45,8 @@ export function AppHeader() {
                     onClick={() => scrollTo(item.to)}
                     className="text-foreground/70 hover:text-foreground justify-start"
                   >
-                    {item.icon && <item.icon className="mr-2 h-4 w-4" />}{item.title}
+                    {item.icon && <item.icon className="mr-2 h-4 w-4" />}
+                    {item.title}
                   </Button>
                 ))}
               </nav>
