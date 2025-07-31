@@ -1,4 +1,3 @@
-
 export const projects = [
   {
     title: "Couples Games",
@@ -11,7 +10,7 @@ export const projects = [
   },
   {
     title: "Calchub",
-    cardImage: "assets/images/project-page/calculator.png",
+    cardImage: "assets/images/project-page/calchub.png",
     description:
       "A website built to allow users to use various calculators, built using react and hosted on Render.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/dot-net-1-1175070.png",

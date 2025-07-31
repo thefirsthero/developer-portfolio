@@ -1,4 +1,3 @@
-
 export const resumeData = {
   personal: {
     name: "Vukosi Moyane",
@@ -24,11 +23,27 @@ export const resumeData = {
   },
   skills: [
     { name: "C# & LINQ", level: 90, icon: "assets/icons/csharp.svg" },
-    { name: ".NET 6/8 & ASP.NET Core", level: 85, icon: "assets/icons/dotnet.svg" },
-    { name: "Entity Framework Core", level: 80, icon: "assets/icons/efcore.svg" },
-    { name: "SQL Server & T-SQL", level: 80, icon: "assets/icons/sqlserver.svg" },
+    {
+      name: ".NET 6/8 & ASP.NET Core",
+      level: 85,
+      icon: "assets/icons/dotnet.svg",
+    },
+    {
+      name: "Entity Framework Core",
+      level: 80,
+      icon: "assets/icons/efcore.svg",
+    },
+    {
+      name: "SQL Server & T-SQL",
+      level: 80,
+      icon: "assets/icons/sqlserver.svg",
+    },
     { name: "Microsoft Azure", level: 75, icon: "assets/icons/azure.svg" },
-    { name: "Azure DevOps & CI/CD", level: 80, icon: "assets/icons/azuredevops.svg" },
+    {
+      name: "Azure DevOps & CI/CD",
+      level: 80,
+      icon: "assets/icons/azuredevops.svg",
+    },
     { name: "Vue.js", level: 70, icon: "assets/icons/vuejs.svg" },
     { name: "React", level: 65, icon: "assets/icons/react.svg" },
     { name: "JavaScript", level: 70, icon: "assets/icons/javascript.svg" },
@@ -107,6 +122,16 @@ export const resumeData = {
         "A website built to allow couples (or any 2 people) to play games together, built using React with .NET and Firestore, hosted on Render.",
       previewLink: "https://couplesgames.onrender.com/",
       githubLink: "https://github.com/thefirsthero/couplesgames",
+    },
+    {
+      title: "Calchub",
+      cardImage: "assets/images/project-page/calchub.png",
+      description:
+        "A website built to allow users to use various calculators, built using react and hosted on Render.",
+      tagimg:
+        "https://cdn.iconscout.com/icon/free/png-512/dot-net-1-1175070.png",
+      Previewlink: "https://calchub.onrender.com/",
+      Githublink: "https://github.com/thefirsthero/calchub",
     },
     {
       title: "My Confessions",
