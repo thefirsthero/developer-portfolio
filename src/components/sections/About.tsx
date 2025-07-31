@@ -1,4 +1,3 @@
-
 import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function About() {
@@ -8,7 +7,9 @@ export default function About() {
         <h2 className="text-3xl font-bold text-center mb-8">About Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-4">I'm {resumeData.personal.name}</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              I'm {resumeData.personal.name}
+            </h3>
             <p className="text-lg mb-4">{resumeData.personal.title}</p>
             <p>{resumeData.personal.profile}</p>
           </div>

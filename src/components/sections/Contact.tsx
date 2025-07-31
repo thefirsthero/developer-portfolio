@@ -1,5 +1,3 @@
-
-import { resumeData } from "../../config/data/resume/resume-data";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 
@@ -15,8 +13,13 @@ export default function Contact() {
               <Input placeholder="Email" type="email" />
             </div>
             <Input placeholder="Subject" className="mb-4" />
-            <textarea placeholder="Message" className="w-full p-2 border rounded-md mb-4"></textarea>
-            <Button type="submit" className="w-full">Send Message</Button>
+            <textarea
+              placeholder="Message"
+              className="w-full p-2 border rounded-md mb-4"
+            ></textarea>
+            <Button type="submit" className="w-full">
+              Send Message
+            </Button>
           </form>
         </div>
       </div>

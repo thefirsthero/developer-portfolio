@@ -15,12 +15,12 @@ export default function App() {
       <AppHeader />
       <main className="flex-1">
         <Hero />
-<About />
-<Skills />
-<Experience />
-<Projects />
-<Contact />
-<ScrollToTop />
+        <About />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+        <ScrollToTop />
       </main>
       <AppFooter />
     </ThemeProvider>

@@ -1,4 +1,3 @@
-
 import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function Hero() {
@@ -11,7 +10,9 @@ export default function Hero() {
           className="w-48 h-48 mx-auto rounded-full mb-4"
         />
         <h1 className="text-4xl font-bold">{resumeData.personal.name}</h1>
-        <p className="text-xl text-muted-foreground">{resumeData.personal.title}</p>
+        <p className="text-xl text-muted-foreground">
+          {resumeData.personal.title}
+        </p>
         <p className="mt-4 max-w-2xl mx-auto">{resumeData.personal.profile}</p>
       </div>
     </section>

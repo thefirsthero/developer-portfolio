@@ -1,6 +1,11 @@
-
 import { resumeData } from "../../config/data/resume/resume-data";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
 import { Button } from "../ui/button";
 
 export default function Projects() {
@@ -12,7 +17,11 @@ export default function Projects() {
           {resumeData.projects.map((project) => (
             <Card key={project.title}>
               <CardHeader>
-                <img src={project.cardImage} alt={project.title} className="rounded-t-lg" />
+                <img
+                  src={project.cardImage}
+                  alt={project.title}
+                  className="rounded-t-lg"
+                />
                 <CardTitle className="mt-4">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -20,7 +29,11 @@ export default function Projects() {
               </CardContent>
               <CardFooter>
                 <Button asChild>
-                  <a href={project.previewLink} target="_blank" rel="noreferrer">
+                  <a
+                    href={project.previewLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Preview
                   </a>
                 </Button>
