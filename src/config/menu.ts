@@ -1,38 +1,9 @@
-import { CircleAlert, Files, Gauge, LucideIcon } from "lucide-react";
+import { Home, User, Briefcase, Code, Mail } from "lucide-react";
 
-type MenuItemType = {
-  title: string;
-  url: string;
-  external?: string;
-  icon?: LucideIcon;
-  items?: MenuItemType[];
-};
-type MenuType = MenuItemType[];
-
-export const mainMenu: MenuType = [
-  {
-    title: "Dashboard",
-    url: "/",
-    icon: Gauge,
-  },
-  {
-    title: "Pages",
-    url: "/pages",
-    icon: Files,
-    items: [
-      {
-        title: "Sample Page",
-        url: "/pages/sample",
-      },
-      {
-        title: "Coming Soon",
-        url: "/pages/feature",
-      },
-    ],
-  },
-  {
-    title: "Error",
-    url: "/404",
-    icon: CircleAlert,
-  },
+export const mainMenu = [
+  { title: "Home", to: "hero", icon: Home },
+  { title: "About", to: "about", icon: User },
+  { title: "Experience", to: "experience", icon: Briefcase },
+  { title: "Projects", to: "projects", icon: Code },
+  { title: "Contact", to: "contact", icon: Mail },
 ];
