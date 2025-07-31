@@ -15,7 +15,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {resumeData.projects.map((project) => (
-            <Card key={project.title}>
+            <Card key={project.title} className="flex flex-col justify-between h-full">
               <CardHeader>
                 <img
                   src={project.cardImage}
@@ -27,21 +27,23 @@ export default function Projects() {
               <CardContent>
                 <p>{project.description}</p>
               </CardContent>
-              <CardFooter>
-                <Button asChild>
-                  <a
-                    href={project.previewLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Preview
-                  </a>
-                </Button>
-                <Button variant="outline" asChild>
-                  <a href={project.githubLink} target="_blank" rel="noreferrer">
-                    GitHub
-                  </a>
-                </Button>
+              <CardFooter className="flex justify-center gap-x-2">
+                <div className="flex w-full gap-x-2">
+                  <Button asChild className="flex-1">
+                    <a
+                      href={project.previewLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Preview
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild className="flex-1">
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      GitHub
+                    </a>
+                  </Button>
+                </div>
               </CardFooter>
             </Card>
           ))}
