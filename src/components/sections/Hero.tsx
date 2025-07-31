@@ -3,7 +3,7 @@ import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function Hero() {
   return (
-    <section id="hero" className="py-20">
+    <section id="hero" className="py-20 px-4">
       <div className="container mx-auto text-center">
         <img
           src={resumeData.personal.image}

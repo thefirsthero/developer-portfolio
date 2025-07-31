@@ -3,7 +3,7 @@ import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-muted">
+    <section id="experience" className="py-20 px-4 bg-muted">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Experience</h2>
         <div className="relative">

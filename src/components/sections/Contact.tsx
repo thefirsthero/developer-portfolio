@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-muted">
+    <section id="contact" className="py-20 px-4 bg-muted">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
         <div className="max-w-lg mx-auto">

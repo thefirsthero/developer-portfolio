@@ -3,7 +3,7 @@ import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 px-4">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
