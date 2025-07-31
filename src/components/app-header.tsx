@@ -4,6 +4,8 @@ import { AppLogo } from "./app-logo";
 import { Button } from "./ui/button";
 import { appConfig } from "@/config/app";
 import GitHub from "./icons/github";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 export function AppHeader() {
   const scrollTo = (id: string) => {
@@ -18,20 +20,42 @@ export function AppHeader() {
       <div className="w-full ~max-w-7xl mx-auto flex items-center gap-2 h-14 px-4 md:px-8">
         <AppLogo />
         <div className="ml-4 flex-1 flex items-center justify-between">
-          <div className="flex-1">
-            <nav className="hidden md:flex gap-1">
-              {mainMenu.map((item) => (
-                <Button
-                  key={item.to}
-                  variant="link"
-                  onClick={() => scrollTo(item.to)}
-                  className="text-foreground/70 hover:text-foreground"
-                >
-                  {item.icon && <item.icon className="mr-2 h-4 w-4" />}
-                  {item.title}
+          <nav className="hidden md:flex gap-1">
+            {mainMenu.map((item) => (
+              <Button
+                key={item.to}
+                variant="link"
+                onClick={() => scrollTo(item.to)}
+                className="text-foreground/70 hover:text-foreground"
+              >
+                {item.icon && <item.icon className="mr-2 h-4 w-4" />}
+                {item.title}
+              </Button>
+            ))}
+          </nav>
+          <div className="flex items-center gap-1 md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button size="icon" variant="ghost">
+                  <Menu />
                 </Button>
-              ))}
-            </nav>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <nav className="flex flex-col gap-1 pt-4">
+                  {mainMenu.map((item) => (
+                    <Button
+                      key={item.to}
+                      variant="link"
+                      onClick={() => scrollTo(item.to)}
+                      className="text-foreground/70 hover:text-foreground justify-start"
+                    >
+                      {item.icon && <item.icon className="mr-2 h-4 w-4" />}
+                      {item.title}
+                    </Button>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
           <nav className="flex gap-1">
             <a
