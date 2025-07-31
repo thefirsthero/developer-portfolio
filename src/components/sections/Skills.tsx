@@ -10,7 +10,7 @@ export default function Skills() {
           {resumeData.skills.map((skill) => (
             <div key={skill.name} className="text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-muted flex items-center justify-center">
-                <span className="text-4xl">{/* Icon will go here */}</span>
+                <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
               </div>
               <p className="font-bold">{skill.name}</p>
             </div>

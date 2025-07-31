@@ -39,9 +39,7 @@ export function AppHeader() {
               title={appConfig.github.title}
               target="_blank"
               rel="noreferrer"
-              className={cn(
-                "size-8",
-              )}
+              className={cn("size-8")}
             >
               <GitHub />
               <span className="sr-only">GitHub</span>
