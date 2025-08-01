@@ -8,6 +8,7 @@ type AppConfigType = {
     name: string;
     url: string;
   };
+  formcarry: string;
 };
 
 export const appConfig: AppConfigType = {
@@ -20,6 +21,7 @@ export const appConfig: AppConfigType = {
     name: "thefirsthero",
     url: "https://github.com/thefirsthero/",
   },
+  formcarry: "https://formcarry.com/s/IeZQilAc8Te",
 };
 
 export const baseUrl = import.meta.env.VITE_BASE_URL ?? "";
