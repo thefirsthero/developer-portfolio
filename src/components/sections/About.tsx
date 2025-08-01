@@ -1,4 +1,7 @@
 import { resumeData } from "../../config/data/resume/resume-data";
+import { appConfig } from "../../config/app";
+import { Button } from "../ui/button";
+import { Github, Linkedin, Code } from "lucide-react";
 
 export default function About() {
   return (
@@ -11,7 +14,51 @@ export default function About() {
               I'm {resumeData.personal.name}
             </h3>
             <p className="text-lg mb-4">{resumeData.personal.title}</p>
-            <p>{resumeData.personal.profile}</p>
+            <p className="mb-4">{resumeData.personal.profile}</p>
+            <div className="flex space-x-4">
+              <Button
+                variant="default"
+                size="icon"
+                asChild
+              >
+                <a
+                  href={appConfig.github.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={appConfig.github.title}
+                >
+                  <Github className="h-6 w-6" />
+                </a>
+              </Button>
+              <Button
+                variant="default"
+                size="icon"
+                asChild
+              >
+                <a
+                  href={appConfig.linkedin.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={appConfig.linkedin.title}
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
+              </Button>
+              <Button
+                variant="default"
+                size="icon"
+                asChild
+              >
+                <a
+                  href={appConfig.leetcode.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={appConfig.leetcode.title}
+                >
+                  <Code className="h-6 w-6" />
+                </a>
+              </Button>
+            </div>
           </div>
           <div>
             <img
