@@ -16,7 +16,7 @@ export function AppHeader() {
     <header className="bg-background sticky top-0 z-50 border-b">
       <div className="w-full ~max-w-7xl mx-auto flex items-center gap-2 h-14 px-4 md:px-8 justify-between">
         <AppLogo />
-        <nav className="hidden md:flex gap-1 justify-center">
+        <nav className="hidden lg:flex gap-1 justify-center">
           {mainMenu.map((item) => (
             <Button
               key={item.to}
@@ -29,7 +29,7 @@ export function AppHeader() {
             </Button>
           ))}
         </nav>
-        <div className="flex items-center gap-1 md:hidden">
+        <div className="flex items-center gap-1 lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button size="icon" variant="ghost">
