@@ -1,5 +1,5 @@
 
-import { education } from "../../config/data/education";
+import { resumeData } from "../../config/data/resume/resume-data";
 
 export default function Education() {
   return (
@@ -8,7 +8,7 @@ export default function Education() {
         <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
         <div className="relative">
           <div className="border-l-2 border-primary absolute h-full left-1/2 transform -translate-x-1/2"></div>
-          {education.map((edu, index) => (
+          {resumeData.education.map((edu, index) => (
             <div
               key={index}
               className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? "flex-row-reverse" : ""}`}
