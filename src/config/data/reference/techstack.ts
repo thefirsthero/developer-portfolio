@@ -1,4 +1,3 @@
-
 export const techStack = [
   {
     langImage: "assets/images/techstack-page/csharp.png",
