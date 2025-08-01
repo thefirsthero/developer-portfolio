@@ -15,7 +15,7 @@ export default function About() {
             </h3>
             <p className="text-lg mb-4">{resumeData.personal.title}</p>
             <p className="mb-4">{resumeData.personal.profile}</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-6">
               <Button
                 variant="default"
                 size="icon"
