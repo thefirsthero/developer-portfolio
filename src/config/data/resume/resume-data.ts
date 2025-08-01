@@ -22,36 +22,41 @@ export const resumeData = {
       "I'm a Fullstack .NET Developer passionate about building scalable APIs, modern web apps, and robust enterprise solutions. Currently working at Sanlam, I design and implement systems ranging from retirement fund portals to audit reporting solutions using C#, ASP.NET Core, EF Core, Vue.js, and Azure. With strong problem-solving skills, experience in both legacy and modern .NET systems, and a proven ability to deliver complex features within SAFe Agile environments, I aim to create impactful software that balances technical excellence with business value.",
   },
   skills: [
-    { name: "C# & LINQ", level: 90, icon: "assets/icons/csharp.svg" },
     {
-      name: ".NET 6/8 & ASP.NET Core",
-      level: 85,
+      name: ".NET (ASP.NET Core, .NET Framework)",
+      level: 90,
       icon: "assets/icons/dotnet.svg",
     },
     {
-      name: "Entity Framework Core",
+      name: "SQL Server / T-SQL",
       level: 80,
-      icon: "assets/icons/efcore.svg",
+      icon: "assets/icons/sql.svg",
     },
     {
-      name: "SQL Server & T-SQL",
-      level: 80,
-      icon: "assets/icons/sqlserver.svg",
+      name: "JavaScript (Vue.js, React)",
+      level: 70,
+      icon: "assets/icons/javascript.svg",
     },
-    { name: "Microsoft Azure", level: 75, icon: "assets/icons/azure.svg" },
     {
-      name: "Azure DevOps & CI/CD",
+      name: "Azure (DevOps, CI/CD)",
       level: 80,
-      icon: "assets/icons/azuredevops.svg",
+      icon: "assets/icons/azure.svg",
     },
-    { name: "Vue.js", level: 70, icon: "assets/icons/vuejs.svg" },
-    { name: "React", level: 65, icon: "assets/icons/react.svg" },
-    { name: "JavaScript", level: 70, icon: "assets/icons/javascript.svg" },
-    { name: "Python", level: 60, icon: "assets/icons/python.svg" },
-    { name: "Flutter", level: 55, icon: "assets/icons/flutter.svg" },
+    {
+      name: "AWS",
+      level: 60,
+      icon: "assets/icons/aws.svg",
+    },
     { name: "Docker", level: 70, icon: "assets/icons/docker.svg" },
     { name: "Git & GitHub", level: 85, icon: "assets/icons/git.svg" },
+    {
+      name: "Python (Automation, Data, ML, Api's)",
+      level: 60,
+      icon: "assets/icons/python.svg",
+    },
+    { name: "Flutter", level: 55, icon: "assets/icons/flutter.svg" },
   ],
+
   languages: [{ name: "English", stars: 5 }],
   experience: [
     {
