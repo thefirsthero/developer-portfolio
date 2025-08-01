@@ -16,46 +16,40 @@ export default function About() {
             <p className="text-lg mb-4">{resumeData.personal.title}</p>
             <p className="mb-4">{resumeData.personal.profile}</p>
             <div className="flex space-x-4 mt-6">
-              <Button
-                variant="default"
-                size="icon"
-                asChild
-              >
+              <Button variant="default" asChild>
                 <a
                   href={appConfig.github.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={appConfig.github.title}
+                  className="flex items-center"
                 >
-                  <Github className="h-6 w-6" />
+                  <Github className="h-4 w-4 mr-2" />
+                  GitHub
                 </a>
               </Button>
-              <Button
-                variant="default"
-                size="icon"
-                asChild
-              >
+              <Button variant="default" asChild>
                 <a
                   href={appConfig.linkedin.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={appConfig.linkedin.title}
+                  className="flex items-center"
                 >
-                  <Linkedin className="h-6 w-6" />
+                  <Linkedin className="h-4 w-4 mr-2" />
+                  LinkedIn
                 </a>
               </Button>
-              <Button
-                variant="default"
-                size="icon"
-                asChild
-              >
+              <Button variant="default" asChild>
                 <a
                   href={appConfig.leetcode.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={appConfig.leetcode.title}
+                  className="flex items-center"
                 >
-                  <Code className="h-6 w-6" />
+                  <Code className="h-4 w-4 mr-2" />
+                  LeetCode
                 </a>
               </Button>
             </div>
